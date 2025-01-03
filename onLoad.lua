@@ -2,19 +2,9 @@ isDown = love.keyboard.isDown
 love.window.setTitle("Reno's Tile Editor")
 
 local loadImg = love.graphics.newImage
+local JsonConfigTiles = json.decode(files.loadFile("tiles/tiles.json"))
+print(json.encode(JsonConfigTiles))
 sprites.tiles = {}
-
-table.insert(sprites.tiles,loadImg("tiles/grama_01.png"))
-table.insert(sprites.tiles,loadImg("tiles/grama_02.png"))
-table.insert(sprites.tiles,loadImg("tiles/grama_03.png"))
-table.insert(sprites.tiles,loadImg("tiles/arvore_01.png"))
-table.insert(sprites.tiles,loadImg("tiles/arvore_01.png"))
-table.insert(sprites.tiles,loadImg("tiles/chao_01.png"))
-table.insert(sprites.tiles,loadImg("tiles/chao_02.png"))
-table.insert(sprites.tiles,loadImg("tiles/parede_b.png"))
-table.insert(sprites.tiles,loadImg("tiles/4k.png"))
-
-
 
 
 
